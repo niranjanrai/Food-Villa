@@ -2,25 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React</title>
 </head>
 
 <body>
-    <div id="root">
-        <h1>Namaste Everyone!</h1>
-    </div>
+    <div id="root"></div>
 </body>
 
-<script>
-
-    const div = document.querySelector('#root')
-    const h1 = document.createElement('h1')
-    h1.innerHTML = 'Namaste everybody!'
-    div.appendChild(h1)
+<!--  In Js -->
+<!-- <script>
+    const div = document.getElementById("root");
+    const h1 = document.createElement("h1");
+    h1.innerHTML = "Namaste everybody from javascript";
+    div.appendChild(h1);
+    h1.style.color = "green";
     console.log(div);
+</script> -->
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+    const heading = React.createElement('h1', {}, 'Namaste everybody!')
+    console.log(heading);
+    const root = ReactDOM.createRoot(document.getElementById('root'))
+    root.render(heading)
 </script>
+
 
 </html>
