@@ -1,0 +1,22 @@
+{
+  "name": "food-villa",
+  "version": "1.0.0",
+  "description": "This is a personal project",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niranjanrai/Food-Villa.git"
+  },
+  "author": "Niranjan rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niranjanrai/Food-Villa/issues"
+  },
+  "homepage": "https://github.com/niranjanrai/Food-Villa#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
